@@ -778,6 +778,56 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
+
+#skill .cardview {
+  height: 230px;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  box-shadow: 0 -0.6em 1.5em rgba(0, 0, 0, 0.1);
+}
+
+#skill .cardview img {
+  margin-top: 15px;
+  margin-left: 20%;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+p.round3 {
+  border: 2px solid #1f5297;
+  border-radius: 20px;
+  padding: 10px 16px;
+  color: #1f5297;
+  background-color: white;
+  font-weight: bold;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+p.round3 i {
+  font-size: 18px;
+}
+
+p.round3:hover {
+  background-color: #1f5297;
+  color: white;
+}
+
+p.round3:hover i {
+  color: white;
+}
+
+/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {

@@ -1251,6 +1251,138 @@ p.round3:hover i {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
+/*--------------------------------------------------------------
+# Project Cards Section Styling
+--------------------------------------------------------------*/
+
+.project-cards {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.project-cards .section-title {
+  text-align: left;
+  margin-bottom: 45px;
+}
+
+.project-cards .section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.project-cards .section-title p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 12px;
+  max-width: 600px;
+  margin-left: 0;   /* changed from auto */
+  margin-right: 0;  /* changed from auto */
+}
+
+
+.project-cards .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.project-cards .col-lg-4, 
+.project-cards .col-md-6 {
+  flex: 0 0 31%; /* roughly 3 cards per row with gap */
+  max-width: 31%;
+}
+
+@media (max-width: 992px) {
+  .project-cards .col-lg-4, 
+  .project-cards .col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-cards .col-lg-4, 
+  .project-cards .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.project-cards .container-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-cards .container-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-cards .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+.project-cards .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden; /* clip overflow */
+}
+
+.project-cards .image img {
+  width: 100%;
+  height: 180px; /* fixed height for uniformity */
+  object-fit: contain; /* keep entire image visible */
+  background-color: #fff; /* optional: white background to fill space */
+  border-radius: 8px;
+}
+
+
+.project-cards .content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-cards .content h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.project-cards .content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+  flex-grow: 1;
+}
+
+.project-cards a[target="_blank"] {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .project-cards .image img {
+    height: 140px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Service Details Section
